@@ -20,7 +20,12 @@ get '/check' do
   'checking shotgun'
 end
 
-get '/cat' do
+get '/random-cat' do
   @code = ["Shane", "Misa"].sample
+  erb :index
+end
+
+get '/named-cat' do
+  @code = params[:name]
   erb :index
 end
