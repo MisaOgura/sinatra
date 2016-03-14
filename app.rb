@@ -21,7 +21,5 @@ get '/check' do
 end
 
 get '/cat' do
-  "<div>
-  <img src='http://bit.ly/1eze8aE' style='border: 5px red dashed'>
-  </div>"
+  "<img src='http://bit.ly/1eze8aE' style='border: 5px red dashed'>"
 end
