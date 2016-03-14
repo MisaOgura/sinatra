@@ -21,5 +21,6 @@ get '/check' do
 end
 
 get '/cat' do
-  erb(:index)
+  @code = ["Shane", "Misa"].sample
+  erb :index
 end
