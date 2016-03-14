@@ -1,0 +1,8 @@
+<% if @name %>
+<h1>My name is <%= @name %></h1>
+<% end %>
+<form action="/cat2" method="post">
+  <input type="text" name="name" />
+  <input type="submit" value="Submit" />
+</form>
+<img src='images/cat.png' style='border: 5px red dashed'>
