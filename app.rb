@@ -21,5 +21,5 @@ get '/check' do
 end
 
 get '/cat' do
-  "<img src='images/cat.png' style='border: 5px red dashed'>"
+  erb(:index)
 end
