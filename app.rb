@@ -1,13 +1,16 @@
 require 'sinatra'
 
+
+
 get '/' do
-  "Hello World"
+  "Hello Beautiful World"
 end
 
-get '/secret' do
-  "this is a huge secret"
+get '/secret-stuff' do
+  erb(:secret)
 end
 
 get '/cat' do
+  name = %w(Amigo Oscar Viking).sample
   erb(:index)
 end
