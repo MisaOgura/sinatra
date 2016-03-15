@@ -1,7 +1,5 @@
 require 'sinatra'
 
-
-
 get '/' do
   "Hello Beautiful World"
 end
@@ -17,5 +15,7 @@ end
 
 get '/named-cat' do
   @name = params[:name]
+  p params
+  @name ||= ''
   erb(:index)
 end
