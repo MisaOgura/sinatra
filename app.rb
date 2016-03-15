@@ -22,7 +22,7 @@ end
 
 get '/random-cat' do
   @code = ["Shane", "Misa"].sample
-  erb :index
+  erb :named_cat
 end
 
 get '/cat_form' do
@@ -32,5 +32,5 @@ end
 post '/named-cat' do
   p params
   @name = params[:name]
-  erb :index
+  erb :named_cat
 end
